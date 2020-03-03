@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
             arrayListOf("Manifest", "Ant", "Gradle", "Synthetics"), 2))
         questions.add(Question("Who invented Java?",
             arrayListOf("James Gosling", "Bjarne Stoutstrup", "Larry Wall", "Rasmus Landorf"), 0))
+
         val mListView = question_list
         val myListAdapter = QuestionAdapter(this, questions)
         mListView.adapter = myListAdapter

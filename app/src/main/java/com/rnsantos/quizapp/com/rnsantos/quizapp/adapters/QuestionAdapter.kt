@@ -34,14 +34,7 @@ class QuestionAdapter(private val context: Activity, private val questions: Arra
             rgbOptions[i].text = questions[position].options[i]
         }
 
-        rbgOptionsGroup.setOnCheckedChangeListener { group, checkedId ->
-            group.clearCheck()
-            val checked = rowView.findViewById<RadioButton>(checkedId)
-            checked.isChecked = true
-            if(checkedId == questions[position].correct) {
 
-            }
-        }
         return rowView
     }
 
